@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 04 - Product Information Extractor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Product Information Extractor</h1>
+
+    <button onclick="extractProducts()">Extract Products</button>
+    <button onclick="downloadCSV()">Download CSV</button>
+
+    <!-- Sample e-commerce products -->
+    <div id="products" style="display:none;">
+        <div class="product">
+            <span class="name">Laptop</span>
+            <span class="price">₹55,000</span>
+            <span class="rating">4.5</span>
+        </div>
+        <div class="product">
+            <span class="name">Smartphone</span>
+            <span class="price">₹25,000</span>
+            <span class="rating">4.2</span>
+        </div>
+        <div class="product">
+            <span class="name">Headphones</span>
+            <span class="price">₹2,500</span>
+            <span class="rating">4.0</span>
+        </div>
+        <div class="product">
+            <span class="name">Smart Watch</span>
+            <span class="price">₹3,999</span>
+            <span class="rating">4.3</span>
+        </div>
+    </div>
+
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
